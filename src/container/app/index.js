@@ -1,14 +1,19 @@
 import React, { Component } from "react";
 import { Provider } from "react-redux";
+// import Loadable from "react-loadable";
 import store from "./store";
-import Test from "../../component/Test";
+
+// COMPONENTS
+import Auth from "./auth";
 
 class App extends Component {
   render() {
     return (
-      <Provider store={store}>
-        <Test />
-      </Provider>
+      <div>
+        <Provider store={store}>
+          <Auth />
+        </Provider>
+      </div>
     );
   }
 }

@@ -14,7 +14,7 @@ module.exports = {
         options: {
           babelrc: false,
           presets: ["@babel/react", "@babel/preset-env"],
-          plugins: ["@babel/proposal-class-properties"]
+          plugins: ["@babel/proposal-class-properties", "@babel/plugin-syntax-dynamic-import"]
         }
       },
       {
