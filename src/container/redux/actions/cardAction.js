@@ -1,10 +1,8 @@
-const requestCardsAction = () => ({
-  type: "REQUEST_CARDS"
-});
+export const requestCardsAction = () => {
+  return { type: "REQUEST_CARDS" };
+};
 
-const fullFillCardsAction = (data = [{ name: "História", id: 1 }]) => ({
+export const fullFillCardsAction = (data = [{ name: "História", id: 1 }]) => ({
   type: "FULLFILL_CARDS",
   payload: data
 });
-
-export default { requestCardsAction, fullFillCardsAction };
